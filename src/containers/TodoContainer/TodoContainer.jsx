@@ -10,7 +10,7 @@ const TodoContainer = ({ todos, removeTodo }) => {
       name={todo.name}
     />
   ));
-  return <>{todosJSX}</>;
+  return <div className="todo-container">{todosJSX}</div>;
 };
 
 export default TodoContainer;

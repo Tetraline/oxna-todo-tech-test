@@ -2,23 +2,33 @@ import "./InputArea.scss";
 
 const InputArea = ({ addTodo }) => {
   const handleAddClick = (event) => {
+    event.preventDefault();
     addTodo({
       key: Date.now(),
-      name: event.target.previousSibling.value,
+      name: event.target[0].value,
       complete: false,
     });
-    event.target.previousSibling.value = "";
+    event.target[0].value = "";
   };
   return (
-    <div className="input-area">
+    <form onSubmit={handleAddClick} className="input-area">
       <input
         className="input-area__textbox"
         placeholder="Add your task here..."
       />
-      <button className="input-area__submit" onClick={handleAddClick}>
-        +
-      </button>
-    </div>
+      <input className="input-area__submit" type="submit" value="+" />
+    </form>
+
+    //<div className="input-area">
+    //  <form action=""></form>
+    //  <input
+    //    className="input-area__textbox"
+    //    placeholder="Add your task here..."
+    //  />
+    //  <button className="input-area__submit" onClick={handleAddClick}>
+    //    +
+    //  </button>
+    //</div>
   );
 };
 
