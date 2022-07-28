@@ -8,11 +8,13 @@
   .input-area__textbox {
     border-right: none;
     width: 70vw;
+    border-radius: 0;
+    margin: 0;
   }
   .input-area__submit {
     border-left: none;
     background-color: transparent;
-    padding: 0;
+    margin: 0;
     padding-right: 10px;
     padding-left: 20px;
   }

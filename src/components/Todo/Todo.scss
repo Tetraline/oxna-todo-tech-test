@@ -1,6 +1,7 @@
 .todo {
   display: grid;
   grid-template-columns: 1fr 8fr 1fr;
+  align-items: center;
   width: 90vw;
   border: 1px solid black;
   border-radius: 3vw;
@@ -9,6 +10,9 @@
   .todo__trash-button {
     background-color: transparent;
     border: none;
+  }
+  .todo__checkbox {
+    margin-left: 10px;
   }
   &--complete > p {
     text-decoration: line-through;
