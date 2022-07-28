@@ -1,0 +1,19 @@
+.input-area {
+  display: flex;
+  justify-content: center;
+  height: 40px;
+  * {
+    border: 1px solid black;
+  }
+  .input-area__textbox {
+    border-right: none;
+    width: 70vw;
+  }
+  .input-area__submit {
+    border-left: none;
+    background-color: transparent;
+    padding: 0;
+    padding-right: 10px;
+    padding-left: 20px;
+  }
+}
