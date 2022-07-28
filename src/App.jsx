@@ -6,11 +6,23 @@ import { useState } from "react";
 
 const App = () => {
   const [todos, setTodos] = useState([]);
+  const addTodo = (todo) => {
+    setTodos([...todos, todo]);
+  };
+  const removeTodo = (key) => {
+    const newTodos = [...todos];
+    newTodos.splice(
+      todos.findIndex((t) => +t.key === +key),
+      1
+    );
+    setTodos(newTodos);
+  };
+
   return (
     <>
       <NavBar setTodos={setTodos} />
-      <InputArea setTodos={setTodos} />
-      <TodoContainer todos={todos} />
+      <InputArea addTodo={addTodo} />
+      <TodoContainer todos={todos} removeTodo={removeTodo} />
     </>
   );
 };

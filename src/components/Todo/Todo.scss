@@ -1,0 +1,13 @@
+.todo {
+  display: grid;
+  grid-template-columns: 1fr 8fr 1fr;
+  width: 90vw;
+  border: 1px solid black;
+  border-radius: 3vw;
+  margin: auto;
+  margin-top: 20px;
+  .todo__trash-button {
+    background-color: transparent;
+    border: none;
+  }
+}
