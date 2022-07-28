@@ -11,7 +11,6 @@ const InputArea = ({ addTodo }) => {
       addTodo({
         key: Date.now(),
         name: event.target[0].value,
-        complete: false,
       });
       event.target[0].value = "";
       setShowAlert(false);

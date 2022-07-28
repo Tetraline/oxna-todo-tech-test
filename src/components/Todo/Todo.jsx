@@ -3,7 +3,7 @@ import { useState } from "react";
 
 const Todo = ({ name, id, removeTodo }) => {
   const [complete, setComplete] = useState(false);
-  const handleTrashClick = (event, key) => {
+  const handleTrashClick = (event) => {
     removeTodo(event.target.parentNode.id);
   };
   const handleCheckBoxChange = (event) => {
