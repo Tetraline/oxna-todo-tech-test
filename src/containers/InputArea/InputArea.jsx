@@ -3,12 +3,17 @@ import "./InputArea.scss";
 const InputArea = ({ addTodo }) => {
   const handleAddClick = (event) => {
     event.preventDefault();
-    addTodo({
-      key: Date.now(),
-      name: event.target[0].value,
-      complete: false,
-    });
-    event.target[0].value = "";
+    const todoText = event.target[0].value;
+    if (todoText.length > 0) {
+      addTodo({
+        key: Date.now(),
+        name: event.target[0].value,
+        complete: false,
+      });
+      event.target[0].value = "";
+    } else {
+      alert("Please enter a todo!");
+    }
   };
   return (
     <form onSubmit={handleAddClick} className="input-area">

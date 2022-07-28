@@ -10,7 +10,17 @@ const TodoContainer = ({ todos, removeTodo }) => {
       name={todo.name}
     />
   ));
-  return <div className="todo-container">{todosJSX}</div>;
+  return (
+    <div className="todo-container">
+      {todosJSX.length > 0 ? (
+        todosJSX
+      ) : (
+        <p className="todo-container__nothing-to-see">
+          Nothing to see here yet... Add a task in the field above ☝️
+        </p>
+      )}
+    </div>
+  );
 };
 
 export default TodoContainer;
