@@ -1,6 +1,9 @@
 import "./InputArea.scss";
+import Alert from "../../components/Alert/Alert";
+import { useState } from "react";
 
 const InputArea = ({ addTodo }) => {
+  const [showAlert, setShowAlert] = useState(false);
   const handleAddClick = (event) => {
     event.preventDefault();
     const todoText = event.target[0].value;
@@ -11,29 +14,22 @@ const InputArea = ({ addTodo }) => {
         complete: false,
       });
       event.target[0].value = "";
+      setShowAlert(false);
     } else {
-      alert("Please enter a todo!");
+      setShowAlert(true);
     }
   };
   return (
-    <form onSubmit={handleAddClick} className="input-area">
-      <input
-        className="input-area__textbox"
-        placeholder="Add your task here..."
-      />
-      <input className="input-area__submit" type="submit" value="+" />
-    </form>
-
-    //<div className="input-area">
-    //  <form action=""></form>
-    //  <input
-    //    className="input-area__textbox"
-    //    placeholder="Add your task here..."
-    //  />
-    //  <button className="input-area__submit" onClick={handleAddClick}>
-    //    +
-    //  </button>
-    //</div>
+    <>
+      <form onSubmit={handleAddClick} className="input-area">
+        <input
+          className="input-area__textbox"
+          placeholder="Add your task here..."
+        />
+        <input className="input-area__submit" type="submit" value="+" />
+      </form>
+      {showAlert && <Alert />}
+    </>
   );
 };
 
