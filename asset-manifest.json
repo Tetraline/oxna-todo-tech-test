@@ -1,15 +1,15 @@
 {
   "files": {
-    "main.css": "/oxna-todo-tech-test/static/css/main.c2553cc5.css",
-    "main.js": "/oxna-todo-tech-test/static/js/main.989114b6.js",
+    "main.css": "/oxna-todo-tech-test/static/css/main.349a0571.css",
+    "main.js": "/oxna-todo-tech-test/static/js/main.7edc8eb8.js",
     "static/js/787.f37395f9.chunk.js": "/oxna-todo-tech-test/static/js/787.f37395f9.chunk.js",
     "index.html": "/oxna-todo-tech-test/index.html",
-    "main.c2553cc5.css.map": "/oxna-todo-tech-test/static/css/main.c2553cc5.css.map",
-    "main.989114b6.js.map": "/oxna-todo-tech-test/static/js/main.989114b6.js.map",
+    "main.349a0571.css.map": "/oxna-todo-tech-test/static/css/main.349a0571.css.map",
+    "main.7edc8eb8.js.map": "/oxna-todo-tech-test/static/js/main.7edc8eb8.js.map",
     "787.f37395f9.chunk.js.map": "/oxna-todo-tech-test/static/js/787.f37395f9.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.c2553cc5.css",
-    "static/js/main.989114b6.js"
+    "static/css/main.349a0571.css",
+    "static/js/main.7edc8eb8.js"
   ]
 }
