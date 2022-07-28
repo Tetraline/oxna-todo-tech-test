@@ -1,0 +1,15 @@
+{
+  "files": {
+    "main.css": "/oxna-todo-tech-test/static/css/main.497e0fa1.css",
+    "main.js": "/oxna-todo-tech-test/static/js/main.29cc803e.js",
+    "static/js/787.f37395f9.chunk.js": "/oxna-todo-tech-test/static/js/787.f37395f9.chunk.js",
+    "index.html": "/oxna-todo-tech-test/index.html",
+    "main.497e0fa1.css.map": "/oxna-todo-tech-test/static/css/main.497e0fa1.css.map",
+    "main.29cc803e.js.map": "/oxna-todo-tech-test/static/js/main.29cc803e.js.map",
+    "787.f37395f9.chunk.js.map": "/oxna-todo-tech-test/static/js/787.f37395f9.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.497e0fa1.css",
+    "static/js/main.29cc803e.js"
+  ]
+}
