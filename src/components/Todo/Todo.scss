@@ -10,4 +10,7 @@
     background-color: transparent;
     border: none;
   }
+  &--complete > p {
+    text-decoration: line-through;
+  }
 }
